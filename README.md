@@ -2,8 +2,6 @@
 
 **Git, GitHub, and Branching**
 
-This repository contains my work for **DCIT50 – Object Oriented Programming**, Laboratory Exercise 1: *Git, GitHub, and Branching*.
-
 ---
 
 ## 📋 Student Information
