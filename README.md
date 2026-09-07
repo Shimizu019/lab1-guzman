@@ -1,4 +1,4 @@
-# DCIT50 — Laboratory Exercise 1
+# DCIT50 — Laboratory 1
 
 **Git, GitHub, and Branching**
 
