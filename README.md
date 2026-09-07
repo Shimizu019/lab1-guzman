@@ -1,124 +1,142 @@
-DCIT50 Laboratory Exercise 1
+# DCIT50 — Laboratory Exercise 1
 
-Git, GitHub, and Branching
+**Git, GitHub, and Branching**
 
-This repository contains my work for DCIT50 – Object Oriented Programming, Laboratory Exercise 1: Git, GitHub, and Branching.
+This repository contains my work for **DCIT50 – Object Oriented Programming**, Laboratory Exercise 1: *Git, GitHub, and Branching*.
 
-Student Information
+---
 
-Student: Benju Guzman
+## 📋 Student Information
 
-Repository: Shimizu019/lab1-guzman
+| Field          | Value                                                    |
+| -------------- | -------------------------------------------------------- |
+| **Student**    | Benju Guzman                                             |
+| **Repository** | [Shimizu019/lab1-guzman](https://github.com/Shimizu019/lab1-guzman) |
+| **Local path** | `C:\Users\CCL305\Documents\lab1guzman`                   |
 
-Laboratory Steps Completed
+---
 
-1. Configure Git
+## 🗂️ Branch Structure
 
-Configured Git with a username and email using:
+Two branches were created and pushed to GitHub:
 
+| Branch      | Contents                              | Purpose                                        |
+| ----------- | ------------------------------------- | ---------------------------------------------- |
+| `no-style`  | Original HTML-only version            | Preserves the initial webpage exactly as created |
+| `main`      | Full webpage with HTML, CSS, and JS   | Working / development version                  |
+
+```
+no-style              main
+└── index.html        ├── index.html
+                      ├── style.css
+                      └── script.js
+```
+
+---
+
+## 🚀 Steps Completed
+
+### Step 1 — Configure Git
+
+Set the global username and email so commits are linked to my GitHub account:
+
+```bash
 git config --global user.name "Benju Guzman"
 git config --global user.email "benjugarcia01@gmail.com"
+```
 
-2. Create the Project Folder
+### Step 2 — Create the Project Folder
 
-Created the project folder:
+Created the project folder and opened it in Visual Studio Code:
 
+```
 C:\Users\CCL305\Documents\lab1guzman
+```
 
-Opened the folder in Visual Studio Code.
+### Step 3 — Initialize the Local Git Repository
 
-3. Initialize the Local Git Repository
+Initialized Git inside the project folder and checked its status:
 
-Initialized Git inside the project folder:
-
+```bash
 git init
-
-Checked the repository status using:
-
 git status
+```
 
-4. Create the Initial HTML Webpage
+### Step 4 — Create the Initial HTML Webpage
 
-Created the initial:
+Created the original HTML-only version of the webpage:
 
+```
 index.html
+```
 
-This was the original HTML-only version of the webpage.
+### Step 5 — Commit the Initial HTML Version
 
-5. Commit the Initial HTML Version
+Staged and committed the HTML file:
 
-Added and committed the HTML file:
-
+```bash
 git add index.html
 git commit -m "Create initial HTML webpage"
+```
 
-6. Create the main and no-style Branches
+### Step 6 — Create the `main` and `no-style` Branches
 
-Renamed the default branch from master to main:
+Renamed the default branch from `master` to `main`, then created the `no-style` branch to preserve the original HTML-only version:
 
+```bash
 git branch -M main
-
-Created the no-style branch to preserve the original HTML-only version:
-
 git branch no-style
+```
 
-The repository now has:
+The repository now has two branches:
 
+```
 main
 no-style
+```
 
-7. Create and Connect the GitHub Repository
+### Step 7 — Create and Connect the GitHub Repository
 
-Created a GitHub repository named:
+Created a GitHub repository named `lab1-guzman`, then connected it to the local repository:
 
-lab1-guzman
-
-GitHub repository:
-
-https://github.com/Shimizu019/lab1-guzman
-
-Connected the local repository to GitHub using:
-
+```bash
 git remote add origin https://github.com/Shimizu019/lab1-guzman.git
-
-Verified the remote connection with:
-
 git remote -v
+```
 
-8. Push the main Branch
+**GitHub URL:** https://github.com/Shimizu019/lab1-guzman
 
-Pushed the main branch to GitHub:
+### Step 8 — Push the `main` Branch
 
+```bash
 git push -u origin main
+```
 
-9. Push the no-style Branch
+### Step 9 — Push the `no-style` Branch
 
-Pushed the no-style branch to GitHub:
-
+```bash
 git push -u origin no-style
+```
 
-Both branches are now available on GitHub.
+Both branches are now available on GitHub. ✅
 
-Branch Structure
+### Step 10 — Add CSS Styling and JavaScript Interactivity
 
-no-style
+Worked on the `main` branch and added the CSS and JavaScript files to complete the webpage:
 
-Contains the original HTML-only version of the webpage.
+```bash
+git add style.css script.js
+git commit -m "Add CSS styling and JavaScript interactivity"
+git push origin main
+```
 
-no-style
-└── index.html
+---
 
-main
+## ⚙️ Git Commands Used
 
-Contains the working version of the webpage. CSS styling and JavaScript interactivity will be added to this branch.
-
-main
-├── index.html
-├── style.css
-└── script.js
-
-Git Commands Used
-
+```bash
+git config --global user.name "Benju Guzman"
+git config --global user.email "benjugarcia01@gmail.com"
 git init
 git status
 git add index.html
@@ -130,25 +148,30 @@ git remote add origin https://github.com/Shimizu019/lab1-guzman.git
 git remote -v
 git push -u origin main
 git push -u origin no-style
+```
 
-Goal of the Laboratory
+---
 
-The goal of this laboratory exercise is to practice:
+## 🎯 Goal of the Laboratory
 
-Creating and managing a local Git repository
+The goal of this exercise is to practice:
 
-Creating commits and tracking changes
+1. Creating and managing a local Git repository
+2. Creating commits and tracking changes
+3. Working with Git branches
+4. Preserving an original version using a separate branch
+5. Connecting a local repository to GitHub
+6. Pushing multiple branches to GitHub
+7. Developing a webpage using HTML, CSS, and JavaScript
 
-Working with Git branches
+---
 
-Preserving an original version using a separate branch
+## ✅ Current Status
 
-Connecting a local repository to GitHub
+The Git and GitHub setup is **fully completed**:
 
-Pushing multiple branches to GitHub
+- Local and remote repositories are connected.
+- Both `main` and `no-style` branches are pushed to GitHub.
+- The `main` branch contains the full webpage with HTML, CSS, and JavaScript.
 
-Developing a webpage using HTML, CSS, and JavaScript
-
-Current Status
-
-The Git and GitHub setup is completed successfully. The next development step is to continue working on the main branch by adding CSS styling and JavaScript interactivity, then commit and push those changes to GitHub.
+The next development step is to continue improving the webpage on the `main` branch and push any new changes to GitHub.
